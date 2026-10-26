@@ -1,6 +1,6 @@
 # search/examples/ — fictional, committable search-layer personas
 
-These four personas are **fictional** (555 phone numbers, `@example.com`
+These personas are **fictional** (555 phone numbers, `@example.com`
 addresses) and exist so the engine's full pipeline can be demonstrated,
 tested, and shown in videos **without any real personal data**. They pair
 with the CVs in `resumes/` and are the ONLY resume-shaped files that belong
@@ -31,3 +31,4 @@ Each persona deliberately exercises a different `applyProfile` /gate branch:
 | Priya Nair | F-1 OPT year 1, explicit `needs_sponsorship: true` | explicit field wins; OPT-window timeline-gate pressure (34/90 unemployment days) |
 | Maya Sehgal | H-1B, seeking transfer | nonimmigrant status decisive; soft-sponsorship tiers |
 | Rohan Desai | U.S. permanent resident, explicit `needs_sponsorship: false` | sponsorship weight → 0 branch (the non-sponsor control case) |
+| Ishaan Varma | F-1 OPT year 1, STEM-eligible, `needs_sponsorship: true` — no CV by design | SOC-framing branch only (`recipes/cases/2026fa/amoghmaddur-ai-media-soc-arbitrage.md`): one creative-technical portfolio, five SOC framings; pivot SOC 15-1255 has no cognitive-pivot score (the UNSCORABLE stop) |

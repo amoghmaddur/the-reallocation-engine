@@ -1,0 +1,10 @@
+{
+  "_note": "PRIVATE. AI Engineer target: title framings vs. sponsorship history. SOC per framing is a proposal awaiting Amogh's confirmation (gate).",
+  "candidate": "amogh (private layer)",
+  "authorization": "F-1 student (MS in progress, program end 2027-12); requires sponsorship",
+  "framings": [
+    { "id": "ai-engineer", "label": "AI Engineer (exact title)", "soc": "15-1221", "title_probes": ["AI ENGINEER", "ARTIFICIAL INTELLIGENCE ENGINEER", "GENERATIVE AI ENGINEER", "AI/ML ENGINEER"] },
+    { "id": "ml-engineer", "label": "Machine Learning Engineer", "soc": "15-1252", "title_probes": ["MACHINE LEARNING ENGINEER", "ML ENGINEER", "MACHINE LEARNING SOFTWARE ENGINEER", "MLOPS"] },
+    { "id": "ml-scientist", "label": "ML / Applied / Data Scientist", "soc": "15-2051", "title_probes": ["APPLIED SCIENTIST", "MACHINE LEARNING SCIENTIST", "RESEARCH SCIENTIST", "DATA SCIENTIST"] }
+  ]
+}

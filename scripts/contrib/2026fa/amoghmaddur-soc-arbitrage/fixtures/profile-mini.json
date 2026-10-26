@@ -1,0 +1,9 @@
+{
+  "_note": "Test fixture only. Pairs with h1b-mini.csv and soc-mini.csv.",
+  "candidate": "fixture",
+  "framings": [
+    { "id": "motion", "label": "Motion", "soc": "27-1014", "title_probes": ["MOTION", "ANIMAT"] },
+    { "id": "product-ux", "label": "Product UX", "soc": "15-1255", "title_probes": ["PRODUCT DESIGN"] },
+    { "id": "frontend", "label": "Frontend", "soc": "15-1252", "title_probes": ["FRONTEND", "SOFTWARE ENGINEER"] }
+  ]
+}

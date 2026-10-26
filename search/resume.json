@@ -1,0 +1,735 @@
+{
+  "attested": true,
+  "attested_date": "2026-10-26",
+  "attestation_note": "Three errors corrected: (1) both internship titles were promoted from 'Intern' to 'Product Developer' / 'Software Developer' — restored per my offer letters and LinkedIn; (2) unmeasured metrics added in the Apr 28 revision (Sphere Soft chatbot and project-usage numbers) removed, measured ones kept; (3) 16 skills with no job or project evidence moved to familiar_with_not_shipped (coursework); 2 of them, Software Testing and GitHub, were later moved back on Pepper evidence. Also corrected: Carbon Footprint Calculator narrowed to my part (Gemini image recognition); Personal AI Prompter is Pepper, re-dated from Jan–Apr 2025 to 2026-07–present and re-described as a browser extension with no backend, not a Firebase app.",
+  "_status": "ATTESTED by Amogh Maddur, 2026-10-26. Any later edit resets attested to false until re-checked.",
+  "_source": {
+    "file": "OneDrive/Desktop/ResumesAndCoverLetters/amoghResumeApr28.pdf",
+    "modified": "2026-04-28",
+    "sha256_prefix": "9cb4da8d1e13a6c4",
+    "extraction": "verbatim — wording, titles and dates copied, not paraphrased",
+    "cross_checked_against": [
+      "OneDrive/Desktop/DataScience/Profile.pdf (LinkedIn export, 2026-02-16)",
+      "OneDrive/Desktop/amoghResumeWordDocVer1-1.docx (2026-04-28 13:14, 18 minutes before the Apr28 version)"
+    ]
+  },
+  "personal": {
+    "name": "Amogh Maddur",
+    "location": "Boston, MA",
+    "contact": "phone and email removed before publishing (2026-10-26); on the résumé PDF",
+    "linkedin": "linkedin.com/in/amogh-maddur-3b0a19352"
+  },
+  "headline": "Bridging Business Needs with Tech Solutions",
+  "education": [
+    {
+      "institution": "Northeastern University",
+      "location": "Boston, MA",
+      "degree": "MS, Management Information Systems",
+      "degree_as_written": "Master of Science in Management Information Systems",
+      "start_date": "2025-09",
+      "end_date": "2027-12",
+      "status": "in_progress (end date is expected)",
+      "coursework": [
+        "Database Management",
+        "Data Analytics",
+        "Systems Analysis",
+        "IT Strategy",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "institution": "Mahindra University",
+      "location": "Hyderabad, India",
+      "degree": "BTech, Computer Science",
+      "degree_as_written": "Bachelor of Technology in Computer Science",
+      "start_date": "2021-10",
+      "end_date": "2025-06",
+      "status": "completed",
+      "coursework": [
+        "Data Structures",
+        "Algorithms",
+        "DBMS",
+        "Operating Systems",
+        "Software Engineering",
+        "Machine Learning"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Sphere Soft Solutions India Pvt. Ltd.",
+      "location": "Hyderabad, India",
+      "title": "Intern",
+      "title_as_written_on_resume": "Intern – Product Developer",
+      "employment_type": "internship",
+      "start_date": "2024-06",
+      "end_date": "2024-08",
+      "bullets": [
+        "Collaborated with a cross-functional team to design and build an AI-powered ChatBot system for multiple client organizations, conducting data-driven market research to identify the target segment and shape the go-to-market strategy.",
+        "Applied Machine Learning techniques including intent classification and response optimization to improve chatbot accuracy across diverse conversational use cases.",
+        "Delivered the chatbot MVP, integrating RESTful APIs and managing deployment on AWS for the client organizations."
+      ],
+      "bullet_sources": [
+        "earlier Word version",
+        "earlier Word version",
+        "agent_edit: '10-week sprint' and 'three' removed (unmeasured, per attestation)"
+      ],
+      "evidence": {
+        "linkedin_export": "Intern, June 2024 - August 2024",
+        "offer_letter": "held by Amogh; title 'Intern' (attested)"
+      },
+      "attestation_correction": "Title restored to 'Intern' (offer letter / LinkedIn). Removed unmeasured numbers: 5-member team, 3 client organizations, 200+ user interactions, 15+ intents, 25% accuracy gain, 10-week sprint.",
+      "draft_bullets": [
+        {
+          "text": "Collaborated with a 5-member cross-functional team to design and build an AI-powered ChatBot system serving 3 client organizations, conducting data-driven market research across 200+ user interactions to identify the target segment and shape the go-to-market strategy.",
+          "numeric_claims": [
+            {
+              "claim": "5-member",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "3",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "200+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Applied Machine Learning techniques including intent classification across 15+ conversational intents and response optimization, improving chatbot accuracy by 25% across diverse conversational use cases.",
+          "numeric_claims": [
+            {
+              "claim": "15+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "25%",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Delivered the chatbot MVP in a 10-week sprint, integrating RESTful APIs and managing deployment on AWS for three client organizations.",
+          "numeric_claims": [
+            {
+              "claim": "10-week",
+              "in_earlier_version": true,
+              "status": "carried over (still unverified)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Sagarsoft (India) Ltd.",
+      "location": "Hyderabad, India",
+      "title": "Intern",
+      "title_as_written_on_resume": "Intern – Software Developer",
+      "employment_type": "internship",
+      "start_date": "2023-07",
+      "end_date": "2023-08",
+      "bullets": [
+        "Designed and implemented a full-stack timesheet management web application with 12+ REST endpoints, architecting a 4-layer backend with model classes, service layers, controllers, and repository patterns for clean separation of concerns.",
+        "Optimized database interactions by leveraging JPA repositories and refining query logic, reducing query processing time by 30% and improving overall application responsiveness for end users.",
+        "Built responsive front-end components using JavaScript and Bootstrap, enabling real-time data entry and approval workflows for 50+ users."
+      ],
+      "bullet_sources": [
+        "résumé Apr28 (numbers attested as measured)",
+        "résumé Apr28 (numbers attested as measured)",
+        "résumé Apr28 (numbers attested as measured)"
+      ],
+      "evidence": {
+        "linkedin_export": "Intern, July 2023 - August 2023, Jubilee Hills",
+        "offer_letter": "held by Amogh; title 'Intern' (attested)"
+      },
+      "attestation_correction": "Title restored to 'Intern' (offer letter / LinkedIn). Numbers kept: attested as measured (12+ endpoints, 4-layer, 30%, 50+ users).",
+      "draft_bullets": [
+        {
+          "text": "Designed and implemented a full-stack timesheet management web application with 12+ REST endpoints, architecting a 4-layer backend with model classes, service layers, controllers, and repository patterns for clean separation of concerns.",
+          "numeric_claims": [
+            {
+              "claim": "12+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "4-layer",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Optimized database interactions by leveraging JPA repositories and refining query logic, reducing query processing time by 30% and improving overall application responsiveness for end users.",
+          "numeric_claims": [
+            {
+              "claim": "30%",
+              "in_earlier_version": true,
+              "status": "carried over (still unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Built responsive front-end components using JavaScript and Bootstrap, enabling real-time data entry and approval workflows for 50+ users.",
+          "numeric_claims": [
+            {
+              "claim": "50+",
+              "in_earlier_version": true,
+              "status": "carried over (still unverified)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Carbon Footprint Calculator",
+      "start_date": "2024-08",
+      "end_date": "2024-12",
+      "type": "team project",
+      "team_size": "not stated",
+      "role": "contributor, not the lead; my part: Gemini image recognition (attested)",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Gemini API",
+        "Google Maps API",
+        "Tailwind CSS"
+      ],
+      "url": null,
+      "bullets": [
+        "Built the Gemini API image-recognition component of a team-built React/TypeScript web application, identifying foods in meal photos and returning their nutritional macros."
+      ],
+      "bullet_sources": [
+        "agent_edit: narrowed earlier-version bullet 1 to the attested share (Gemini image recognition)"
+      ],
+      "attestation_correction": "Team project where Amogh was one contributor, not the lead. Bullets narrowed to his part (Gemini image recognition); the Google Maps emissions and Tailwind dashboard bullet described teammates' work and was removed. Removed unmeasured numbers: 50+ food items, 6 macros, 100+ routes.",
+      "draft_bullets": [
+        {
+          "text": "Built a React/TypeScript SPA that pipes meal photos through the Gemini multimodal API for real-time image classification of 50+ food items, parsing JSON responses to extract 6 nutritional macros and compute per-ingredient emission scores in kg CO₂e.",
+          "numeric_claims": [
+            {
+              "claim": "50+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "6",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Integrated the Google Maps Distance Matrix API to resolve 100+ origin–destination supply-chain routes, applied mode-specific emission factors (road, rail, sea) to estimate transportation CO₂, and aggregated per-meal footprints into a Tailwind CSS dashboard with sortable breakdowns by ingredient, distance, and transport mode.",
+          "numeric_claims": [
+            {
+              "claim": "100+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        }
+      ],
+      "team_stack_not_all_mine": [
+        "Google Maps API",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "name": "Flocking Stability via LaSalle’s Invariance Principle",
+      "start_date": "2024-01",
+      "end_date": "2024-06",
+      "type": "team project",
+      "team_size": "not stated",
+      "role": "led the team (attested)",
+      "tech": [
+        "Python",
+        "MATLAB",
+        "Multi-Agent Systems"
+      ],
+      "url": null,
+      "bullets": [
+        "Implemented a nonlinear flocking model for 50+ autonomous agents to analyze equilibrium formations using LaSalle’s invariance principle, inspired by Reynolds’ 3-rule separation–alignment–cohesion framework, and validated stability through multi-agent simulations across 1,000+ time steps.",
+        "Formulated a continuous-time multi-agent state-space model in 2D and derived Lyapunov functions to study flock stability, proving convergence to cohesive, collision-free invariant sets with 100% formation accuracy under tested initial conditions."
+      ],
+      "bullet_sources": [
+        "résumé Apr28 (numbers attested as measured)",
+        "résumé Apr28 (numbers attested as measured)"
+      ],
+      "attestation_correction": "Numbers kept: attested as measured (50+ agents, 1,000+ time steps, 100% formation accuracy).",
+      "draft_bullets": [
+        {
+          "text": "Implemented a nonlinear flocking model for 50+ autonomous agents to analyze equilibrium formations using LaSalle’s invariance principle, inspired by Reynolds’ 3-rule separation–alignment–cohesion framework, and validated stability through multi-agent simulations across 1,000+ time steps.",
+          "numeric_claims": [
+            {
+              "claim": "50+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "3-rule",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "1,000+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Formulated a continuous-time multi-agent state-space model in 2D and derived Lyapunov functions to study flock stability, proving convergence to cohesive, collision-free invariant sets with 100% formation accuracy under tested initial conditions.",
+          "numeric_claims": [
+            {
+              "claim": "100%",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Financial Fraud Detection",
+      "start_date": "2025-01",
+      "end_date": "2025-04",
+      "type": "solo project",
+      "team_size": 1,
+      "role": "sole author (attested)",
+      "tech": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "SMOTE",
+        "Matplotlib"
+      ],
+      "url": null,
+      "bullets": [
+        "Built an end-to-end fraud detection pipeline on a 6.36M-row, 11-feature synthetic financial dataset (PaySim), applying SMOTE to address extreme class imbalance (0.13% fraud, 773:1 ratio) and training 3 classifiers—Logistic Regression, Random Forest, and Naive Bayes—with GridSearchCV and RandomizedSearchCV (12 iterations, 3-fold stratified CV) optimized on AUPRC.",
+        "Engineered 4 balance-anomaly features from transaction-level data to expose high-risk TRANSFER and CASH_OUT patterns, and visualized model performance across 6 evaluation metrics through ROC curves, precision-recall curves, confusion matrices, and feature importance rankings."
+      ],
+      "bullet_sources": [
+        "résumé Apr28 (numbers attested as measured)",
+        "résumé Apr28 (numbers attested as measured)"
+      ],
+      "attestation_correction": "Numbers kept: attested as measured (PaySim 6.36M rows / 11 features / 0.13% / 773:1; 12 iterations; 3-fold CV; 4 features; 6 metrics).",
+      "draft_bullets": [
+        {
+          "text": "Built an end-to-end fraud detection pipeline on a 6.36M-row, 11-feature synthetic financial dataset (PaySim), applying SMOTE to address extreme class imbalance (0.13% fraud, 773:1 ratio) and training 3 classifiers—Logistic Regression, Random Forest, and Naive Bayes—with GridSearchCV and RandomizedSearchCV (12 iterations, 3-fold stratified CV) optimized on AUPRC.",
+          "numeric_claims": [
+            {
+              "claim": "6.36M",
+              "in_earlier_version": true,
+              "status": "carried over (still unverified)"
+            },
+            {
+              "claim": "11-feature",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "0.13%",
+              "in_earlier_version": true,
+              "status": "carried over (still unverified)"
+            },
+            {
+              "claim": "773:1",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "3",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "12",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "3-fold",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Engineered 4 balance-anomaly features from transaction-level data to expose high-risk TRANSFER and CASH_OUT patterns, and visualized model performance across 6 evaluation metrics through ROC curves, precision-recall curves, confusion matrices, and feature importance rankings.",
+          "numeric_claims": [
+            {
+              "claim": "4",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "6",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pepper — The Personal AI Prompter (Peppr)",
+      "start_date": "2026-07",
+      "end_date": "present",
+      "type": "solo project",
+      "team_size": 1,
+      "role": "sole author (attested; README: 'Built by Amogh Maddur')",
+      "tech": [
+        "JavaScript",
+        "Chrome Extension (Manifest V3)",
+        "chrome.storage.local",
+        "Anthropic API",
+        "OpenAI API",
+        "node:test",
+        "Playwright",
+        "GitHub Actions",
+        "GitHub Pages"
+      ],
+      "url": "https://github.com/amoghmaddur/pepper-ai-prompter",
+      "bullets": [
+        "Building Pepper, a Chrome and Edge (Manifest V3) extension that turns a few rough words into a six-part prompt built from the user's own profile, memories and project files, and places it in the chat box of ChatGPT, Claude, Gemini, Perplexity or Copilot without sending it.",
+        "Calls the user's chosen model (Anthropic or OpenAI, with the user's own key) to rewrite each prompt, falls back to an on-device template without a key, and holds back any facts the model assumed until the user confirms them.",
+        "Personalises after onboarding: 15 profile answers shape each prompt, and after five ratings Pepper defaults to the user's best-rated approach for that kind of work and shows why.",
+        "Covered by 75 unit tests, all passing, including prompt-injection and concurrent-write tests; no backend, with all data kept in chrome.storage.local."
+      ],
+      "bullet_sources": [
+        "README + manifest.json (pepper-v0.3)",
+        "verified in code: content.js runExpand() calls the model when a key is set; background.js:196 (Anthropic) and :207 (OpenAI)",
+        "verified in code: onboarding.js (3 quick questions of 15), lib/core.js MIN_RATINGS = 5",
+        "verified by running: pepper-tests `npm test` → 75/75 pass (2026-10-26)"
+      ],
+      "attestation_correction": "Same project as Pepper / 'Peppr' (attested). Résumé dated it Jan–Apr 2025: wrong — earliest local code is 2026-07-01 (pepper-extension v1), v0.3 is dated 2026-10-07, and it is still in progress. Résumé bullets described a Firebase-hosted web app with real-time sync and authentication; the actual project is a browser extension with no backend. Bullets rewritten from the repository and checked against the code and a test run.",
+      "draft_bullets": [
+        {
+          "text": "Developed a full-stack React web application that stores and indexes 500+ user prompts and AI-generated responses in Firebase Firestore, enabling a searchable personal knowledge base with sub-second query retrieval for recurring AI interactions.",
+          "numeric_claims": [
+            {
+              "claim": "500+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        },
+        {
+          "text": "Engineered a recommendation system that analyzes stored prompt–response pairs to generate top-5 personalized suggestions for future prompts and refined prompt alternatives, deployed on Firebase with real-time sync, OAuth 2.0 authentication, and scalable hosting supporting 100+ concurrent users.",
+          "numeric_claims": [
+            {
+              "claim": "5",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            },
+            {
+              "claim": "100+",
+              "in_earlier_version": false,
+              "status": "added in Apr28 revision (unverified)"
+            }
+          ]
+        }
+      ],
+      "status": "in progress — v0.3 (2026-10-07)",
+      "demo_url": "https://amoghmaddur.github.io/pepper-ai-prompter/",
+      "evidence": {
+        "repo": "github.com/amoghmaddur/pepper-ai-prompter — HTTP 200 on 2026-10-26; local main in sync with origin/main",
+        "playground": "amoghmaddur.github.io/pepper-ai-prompter — HTTP 200 on 2026-10-26",
+        "tests": "75/75 unit tests passed when re-run 2026-10-26; README's 20 browser checks not re-run",
+        "start_date_basis": "earliest local code artifact, 2026-07-01"
+      }
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "SQL",
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "frameworks_libraries": [
+      "React.js",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "databases_cloud": [
+      "AWS"
+    ],
+    "concepts": [
+      "Data Analysis",
+      "Machine Learning",
+      "Agile/Scrum",
+      "REST APIs",
+      "Data Modeling",
+      "Software Testing"
+    ],
+    "familiar_with_not_shipped": [
+      "C",
+      "Flask",
+      "Django",
+      "NumPy",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Azure",
+      "Tableau",
+      "Power BI",
+      "Excel",
+      "VS Code",
+      "Postman",
+      "Docker"
+    ],
+    "tools_platforms": [
+      "GitHub"
+    ]
+  },
+  "skills_evidence": [
+    {
+      "name": "Python",
+      "category": "languages",
+      "evidence": [
+        "proj-flocking",
+        "proj-fraud"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "Java",
+      "category": "languages",
+      "evidence": [
+        "exp-sagarsoft"
+      ],
+      "evidence_strength": "weak",
+      "evidence_note": "only implied by 'JPA repositories'; Java is never named in a job or project"
+    },
+    {
+      "name": "SQL",
+      "category": "languages",
+      "evidence": [
+        "exp-sagarsoft",
+        "proj-prompter"
+      ],
+      "evidence_strength": "weak",
+      "evidence_note": "only implied by JPA / 'query logic'; no SQL is named"
+    },
+    {
+      "name": "JavaScript",
+      "category": "languages",
+      "evidence": [
+        "exp-sagarsoft",
+        "proj-prompter"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "HTML/CSS",
+      "category": "languages",
+      "evidence": [
+        "exp-sagarsoft",
+        "proj-carbon"
+      ],
+      "evidence_strength": "weak",
+      "evidence_note": "only via Tailwind CSS / Bootstrap"
+    },
+    {
+      "name": "C",
+      "category": "languages",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "React.js",
+      "category": "frameworks_libraries",
+      "evidence": [
+        "proj-carbon",
+        "proj-prompter"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "Flask",
+      "category": "frameworks_libraries",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Django",
+      "category": "frameworks_libraries",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Pandas",
+      "category": "frameworks_libraries",
+      "evidence": [
+        "proj-fraud"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "NumPy",
+      "category": "frameworks_libraries",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Scikit-learn",
+      "category": "frameworks_libraries",
+      "evidence": [
+        "proj-fraud"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "MySQL",
+      "category": "databases_cloud",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "databases_cloud",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "MongoDB",
+      "category": "databases_cloud",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "AWS",
+      "category": "databases_cloud",
+      "evidence": [
+        "exp-sphere-soft"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "Azure",
+      "category": "databases_cloud",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "GitHub",
+      "category": "tools_platforms",
+      "evidence": [
+        "Pepper — The Personal AI Prompter (Peppr)"
+      ],
+      "evidence_strength": "direct",
+      "evidence_note": "Pepper v0.3: public repo github.com/amoghmaddur/pepper-ai-prompter (HTTP 200, 2026-10-26) with GitHub Actions workflows tests.yml and pages.yml",
+      "reclassified": "2026-10-26: moved out of coursework on Pepper evidence, at Amogh's instruction"
+    },
+    {
+      "name": "Tableau",
+      "category": "tools_platforms",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Power BI",
+      "category": "tools_platforms",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Excel",
+      "category": "tools_platforms",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "VS Code",
+      "category": "tools_platforms",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Postman",
+      "category": "tools_platforms",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Docker",
+      "category": "tools_platforms",
+      "evidence": [],
+      "evidence_strength": "none"
+    },
+    {
+      "name": "Data Analysis",
+      "category": "concepts",
+      "evidence": [
+        "exp-sphere-soft"
+      ],
+      "evidence_strength": "weak",
+      "evidence_note": "via 'data-driven market research' and coursework"
+    },
+    {
+      "name": "Machine Learning",
+      "category": "concepts",
+      "evidence": [
+        "exp-sphere-soft",
+        "proj-carbon",
+        "proj-fraud"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "Agile/Scrum",
+      "category": "concepts",
+      "evidence": [
+        "exp-sphere-soft"
+      ],
+      "evidence_strength": "weak",
+      "evidence_note": "only via the phrase '10-week sprint'"
+    },
+    {
+      "name": "REST APIs",
+      "category": "concepts",
+      "evidence": [
+        "exp-sphere-soft",
+        "exp-sagarsoft"
+      ],
+      "evidence_strength": "direct"
+    },
+    {
+      "name": "Data Modeling",
+      "category": "concepts",
+      "evidence": [
+        "proj-flocking"
+      ],
+      "evidence_strength": "weak",
+      "evidence_note": "matched 'state-space model' — a mathematical model, not data modeling"
+    },
+    {
+      "name": "Software Testing",
+      "category": "concepts",
+      "evidence": [
+        "Pepper — The Personal AI Prompter (Peppr)"
+      ],
+      "evidence_strength": "direct",
+      "evidence_note": "Pepper v0.3: 75 unit tests (node:test), re-run 2026-10-26, all passing; Playwright browser tests in pepper-tests/e2e (not re-run)",
+      "reclassified": "2026-10-26: moved out of coursework on Pepper evidence, at Amogh's instruction"
+    }
+  ],
+  "certifications": [],
+  "publications": [],
+  "open_items": [
+    "Pepper start date is evidence-bounded (earliest local code, 2026-07-01). If work began earlier, change it and re-attest.",
+    "Carbon Footprint, Flocking and Fraud Detection still have no URL or document a reviewer can open."
+  ]
+}

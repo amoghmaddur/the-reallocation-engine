@@ -1,0 +1,957 @@
+{
+  "workflow": "amoghmaddur-ai-media-soc-arbitrage",
+  "run_id": "soc-arbitrage-2026-10-03-002",
+  "recipe_version": "0.3.0",
+  "mode": "sample",
+  "asof": "2026-10-03",
+  "generated_at": "2026-10-03T16:56:04.134Z",
+  "candidate_ref": "ishaan-varma (fictional persona)",
+  "authorization": "F-1 OPT year 1, STEM-eligible, needs sponsorship (opt_end 2027-07-31)",
+  "source_files": [
+    {
+      "path": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv",
+      "rows": 30369,
+      "rows_with_h1b_history": 1557
+    },
+    {
+      "path": "data/bls/compact/soc_occupation_compact.csv",
+      "rows": 1016,
+      "rows_without_cognitive_pivot_score": 122
+    }
+  ],
+  "universe": {
+    "companies_total": {
+      "value": 30369,
+      "source": "derived"
+    },
+    "companies_with_any_h1b_history": {
+      "value": 1557,
+      "source": "derived"
+    },
+    "h1b_coverage_pct": {
+      "value": 5.1,
+      "source": "derived"
+    },
+    "title_instances_total": {
+      "value": 3319,
+      "source": "derived"
+    },
+    "companies_with_more_approvals_than_listed_titles": {
+      "value": 1517,
+      "source": "derived"
+    },
+    "soc_rows_without_cognitive_pivot_score": {
+      "value": 122,
+      "source": "derived"
+    },
+    "newest_funding_date": {
+      "value": "2025-09-26",
+      "source": "record"
+    },
+    "funding_staleness_days": {
+      "value": 372,
+      "source": "derived"
+    }
+  },
+  "framings": [
+    {
+      "framing_id": "motion-media",
+      "label": "Motion / Media Designer",
+      "claimable": true,
+      "soc": "27-1014",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Special Effects Artists and Animators",
+      "soc_found": true,
+      "title_probes": [
+        "ANIMATOR",
+        "ANIMATION",
+        "MOTION",
+        "VFX",
+        "VISUAL EFFECTS",
+        "VIDEO EDITOR"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 2,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 2,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": 98.71610845295056,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 2,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": 170000,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 2,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": 3.389,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 99800,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "4",
+          "source": "record"
+        }
+      },
+      "scorable": true,
+      "sample_companies": [
+        {
+          "company": "APPLOVIN CORP",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2022-02-23",
+          "total_approvals": 130,
+          "titles": [
+            "Senior Designer, Motion Graphics"
+          ]
+        },
+        {
+          "company": "FIGMA INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2024-05-15",
+          "total_approvals": 188,
+          "titles": [
+            "Motion Designer, Brand Studio"
+          ]
+        }
+      ]
+    },
+    {
+      "framing_id": "creative-direction",
+      "label": "Art / Creative Director",
+      "claimable": true,
+      "soc": "27-1011",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Art Directors",
+      "soc_found": true,
+      "title_probes": [
+        "ART DIRECTOR",
+        "CREATIVE DIRECTOR",
+        "CREATIVE LEAD",
+        "HEAD OF CREATIVE",
+        "CREATIVE STRATEG"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 4,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 4,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": 100,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 4,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": 155571.935,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 4,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": 3.78,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 111040,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "4",
+          "source": "record"
+        }
+      },
+      "scorable": true,
+      "sample_companies": [
+        {
+          "company": "CHEGG INC",
+          "state": "CA",
+          "stage": "Pre-Seed",
+          "last_funding": "2014-04-09",
+          "total_approvals": 132,
+          "titles": [
+            "Associate Creative Director"
+          ]
+        },
+        {
+          "company": "MAGICAL TOME INC",
+          "state": "CA",
+          "stage": "Series C",
+          "last_funding": "2023-02-17",
+          "total_approvals": 14,
+          "titles": [
+            "Creative Strategy Lead"
+          ]
+        },
+        {
+          "company": "NOSOTROS LIFE & SPIRITS INC",
+          "state": "CA",
+          "stage": "Series A",
+          "last_funding": "2023-05-04",
+          "total_approvals": 2,
+          "titles": [
+            "Head of Creative Direction"
+          ]
+        },
+        {
+          "company": "REDDIT INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2021-08-11",
+          "total_approvals": 408,
+          "titles": [
+            "Senior Creative Strategist"
+          ]
+        }
+      ]
+    },
+    {
+      "framing_id": "graphic-visual",
+      "label": "Graphic / Visual Designer",
+      "claimable": true,
+      "soc": "27-1024",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Graphic Designers",
+      "soc_found": true,
+      "title_probes": [
+        "GRAPHIC DESIGN",
+        "VISUAL DESIGN",
+        "BRAND DESIGN",
+        "ILLUSTRAT"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 5,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 5,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": 100,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 5,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": 73466,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 5,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": 3.264,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 61300,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "4",
+          "source": "record"
+        }
+      },
+      "scorable": true,
+      "sample_companies": [
+        {
+          "company": "FITLAB INC",
+          "state": "CA",
+          "stage": "Series A",
+          "last_funding": "2023-03-08",
+          "total_approvals": 2,
+          "titles": [
+            "Visual Designer"
+          ]
+        },
+        {
+          "company": "LOOPIE INC",
+          "state": "WA",
+          "stage": "Pre-Seed",
+          "last_funding": "2020-02-03",
+          "total_approvals": 2,
+          "titles": [
+            "Graphic Designer"
+          ]
+        },
+        {
+          "company": "ODK MEDIA INC",
+          "state": "CA",
+          "stage": "Pre-Seed",
+          "last_funding": "2015-08-25",
+          "total_approvals": 12,
+          "titles": [
+            "Junior Visual Designer"
+          ]
+        },
+        {
+          "company": "SENDBIRD INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2021-03-19",
+          "total_approvals": 24,
+          "titles": [
+            "Brand Designer"
+          ]
+        },
+        {
+          "company": "YENDO INC",
+          "state": "TX",
+          "stage": "Series B",
+          "last_funding": "2023-04-03",
+          "total_approvals": 2,
+          "titles": [
+            "Brand Designer"
+          ]
+        }
+      ]
+    },
+    {
+      "framing_id": "creative-technologist",
+      "label": "Creative Technologist",
+      "claimable": true,
+      "soc": "15-1299",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Computer Occupations, All Other",
+      "soc_found": true,
+      "title_probes": [
+        "CREATIVE TECHNOLOG",
+        "CREATIVE ENGINEER",
+        "CREATIVE DEVELOPER"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 0,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 0,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": null,
+          "source": "missing",
+          "scope": "company-wide",
+          "n": 0,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": null,
+          "source": "missing",
+          "scope": "company-wide",
+          "n": 0,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": null,
+          "source": "missing",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 108970,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "",
+          "source": "record"
+        }
+      },
+      "scorable": false,
+      "sample_companies": []
+    },
+    {
+      "framing_id": "product-ux",
+      "label": "Product / Interface Designer",
+      "claimable": true,
+      "soc": "15-1255",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Web and Digital Interface Designers",
+      "soc_found": true,
+      "title_probes": [
+        "PRODUCT DESIGN",
+        "UX",
+        "UI/UX",
+        "UI DESIGN",
+        "INTERACTION DESIGN",
+        "DESIGN SYSTEM",
+        "WEB DESIGN"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 59,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 55,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": 100,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 55,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": 145000,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 55,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": null,
+          "source": "missing",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 98090,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "4",
+          "source": "record"
+        }
+      },
+      "scorable": false,
+      "sample_companies": [
+        {
+          "company": "ADDEPAR INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2021-06-07",
+          "total_approvals": 150,
+          "titles": [
+            "Product Designer"
+          ]
+        },
+        {
+          "company": "AMBERFLOIO INC",
+          "state": "CA",
+          "stage": "Series B",
+          "last_funding": "2022-12-30",
+          "total_approvals": 4,
+          "titles": [
+            "Product Designer"
+          ]
+        },
+        {
+          "company": "AMBIENCE HEALTHCARE INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2025-07-01",
+          "total_approvals": 6,
+          "titles": [
+            "Founding Product Designer"
+          ]
+        },
+        {
+          "company": "APIXIO INC",
+          "state": "CA",
+          "stage": "Series A",
+          "last_funding": "2018-07-31",
+          "total_approvals": 22,
+          "titles": [
+            "Senior Product Designer"
+          ]
+        },
+        {
+          "company": "ASANA INC",
+          "state": "CA",
+          "stage": "Series C",
+          "last_funding": "2018-11-15",
+          "total_approvals": 352,
+          "titles": [
+            "Product Designer ",
+            "Senior Director of Product Design"
+          ]
+        },
+        {
+          "company": "BRIDGE IT INC",
+          "state": "NY",
+          "stage": "Pre-Seed",
+          "last_funding": "2019-02-12",
+          "total_approvals": 26,
+          "titles": [
+            "Senior Product Design Manager"
+          ]
+        },
+        {
+          "company": "BRIGHTCOVE INC",
+          "state": "MA",
+          "stage": "Pre-Seed",
+          "last_funding": "2022-02-01",
+          "total_approvals": 36,
+          "titles": [
+            "Senior UX Designer"
+          ]
+        },
+        {
+          "company": "CHECKR INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2021-08-24",
+          "total_approvals": 76,
+          "titles": [
+            "Senior Product Designer "
+          ]
+        }
+      ]
+    },
+    {
+      "framing_id": "frontend-narrow",
+      "label": "Front-End / UI Engineer",
+      "claimable": true,
+      "soc": "15-1252",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Software Developers",
+      "soc_found": true,
+      "title_probes": [
+        "FRONT END",
+        "FRONTEND",
+        "FRONT-END",
+        "UI ENGINEER",
+        "WEB ENGINEER",
+        "GRAPHICS ENGINEER",
+        "WEB DEVELOPER"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 19,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 18,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": 100,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 18,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": 119764.25,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 18,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": 3.834,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 133080,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "4",
+          "source": "record"
+        }
+      },
+      "scorable": true,
+      "sample_companies": [
+        {
+          "company": "BARSTOOL SPORTS INC",
+          "state": "NY",
+          "stage": "Series A",
+          "last_funding": "2017-11-07",
+          "total_approvals": 4,
+          "titles": [
+            "Senior Front-end Engineer"
+          ]
+        },
+        {
+          "company": "EARGO INC",
+          "state": "CA",
+          "stage": "Series C",
+          "last_funding": "2020-07-13",
+          "total_approvals": 14,
+          "titles": [
+            "Staff Frontend Software Engineer"
+          ]
+        },
+        {
+          "company": "ENFUSION LTD LLC",
+          "state": "IL",
+          "stage": "Series A",
+          "last_funding": "2015-01-06",
+          "total_approvals": 28,
+          "titles": [
+            "Junior Front End Developer"
+          ]
+        },
+        {
+          "company": "EXTEN TECHNOLOGIES INC",
+          "state": "TX",
+          "stage": "Pre-Seed",
+          "last_funding": "2019-09-18",
+          "total_approvals": 82,
+          "titles": [
+            "Web Developer",
+            "Web Developer "
+          ]
+        },
+        {
+          "company": "FORRGE INC",
+          "state": "NY",
+          "stage": "Pre-Seed",
+          "last_funding": "2015-11-23",
+          "total_approvals": 2,
+          "titles": [
+            "Front End Engineer"
+          ]
+        },
+        {
+          "company": "HINGE HEALTH INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2021-10-22",
+          "total_approvals": 84,
+          "titles": [
+            "Senior Software Engineer – Front End"
+          ]
+        },
+        {
+          "company": "LILT INC",
+          "state": "CA",
+          "stage": "Series C",
+          "last_funding": "2024-11-15",
+          "total_approvals": 6,
+          "titles": [
+            "Senior Front End Engineer"
+          ]
+        },
+        {
+          "company": "MYTIDE THERAPEUTICS INC",
+          "state": "MA",
+          "stage": "Pre-Seed",
+          "last_funding": "2022-12-23",
+          "total_approvals": 2,
+          "titles": [
+            "Front End Developer"
+          ]
+        }
+      ]
+    },
+    {
+      "framing_id": "swe-generic",
+      "label": "Software Engineer (any)",
+      "claimable": false,
+      "soc": "15-1252",
+      "soc_mapping": {
+        "source": "inferred",
+        "note": "title→SOC assigned by the candidate; the 80 Days CSV has no SOC column"
+      },
+      "soc_title": "Software Developers",
+      "soc_found": true,
+      "title_probes": [
+        "SOFTWARE ENGINEER"
+      ],
+      "sponsorship": {
+        "title_instances": {
+          "value": 661,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "distinct_companies": {
+          "value": 441,
+          "source": "derived",
+          "scope": "title",
+          "bound": "lower",
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#top_job_titles_sponsored"
+        },
+        "matched_cos_median_approval_rate": {
+          "value": 100,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 441,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#Approval_Rate"
+        },
+        "matched_cos_median_salary_all_roles": {
+          "value": 149100,
+          "source": "derived",
+          "scope": "company-wide",
+          "n": 441,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#median_salary_offered"
+        },
+        "companies_funded_within_window": {
+          "value": 0,
+          "source": "derived",
+          "window_days": 365,
+          "from": "data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv#latest_funding_date"
+        }
+      },
+      "role_quality": {
+        "cognitive_pivot_score": {
+          "value": 3.834,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#cognitive_pivot_score"
+        },
+        "annual_median_wage": {
+          "value": 133080,
+          "source": "record",
+          "from": "data/bls/compact/soc_occupation_compact.csv#annual_median_wage"
+        },
+        "job_zone": {
+          "value": "4",
+          "source": "record"
+        }
+      },
+      "scorable": true,
+      "sample_companies": [
+        {
+          "company": "1UPHEALTH INC",
+          "state": "MA",
+          "stage": "Series C",
+          "last_funding": "2023-04-03",
+          "total_approvals": 12,
+          "titles": [
+            "Senior Software Engineer"
+          ]
+        },
+        {
+          "company": "23ANDME INC",
+          "state": "CA",
+          "stage": "Series C",
+          "last_funding": "2020-12-09",
+          "total_approvals": 52,
+          "titles": [
+            "Sr. Software Engineer III"
+          ]
+        },
+        {
+          "company": "6SENSE INSIGHTS INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2022-01-20",
+          "total_approvals": 62,
+          "titles": [
+            "Senior Software Engineer"
+          ]
+        },
+        {
+          "company": "A10 NETWORKS INC",
+          "state": "CA",
+          "stage": "Pre-Seed",
+          "last_funding": "2016-06-23",
+          "total_approvals": 106,
+          "titles": [
+            "Staff Software Engineer",
+            "Senior Software Engineer",
+            "Principal QA Software Engineer",
+            "Software Engineer "
+          ]
+        },
+        {
+          "company": "ABACUS INSIGHTS INC",
+          "state": "MA",
+          "stage": "Series A",
+          "last_funding": "2024-10-01",
+          "total_approvals": 22,
+          "titles": [
+            "Software Engineer"
+          ]
+        },
+        {
+          "company": "ACADEMIA INC",
+          "state": "CA",
+          "stage": "Series A",
+          "last_funding": "2013-08-09",
+          "total_approvals": 10,
+          "titles": [
+            "Software Engineer"
+          ]
+        },
+        {
+          "company": "ACCOLADE INC",
+          "state": "WA",
+          "stage": "Series D+",
+          "last_funding": "2021-03-03",
+          "total_approvals": 28,
+          "titles": [
+            "Mgr, Software Engineer"
+          ]
+        },
+        {
+          "company": "ACORNS GROW INC",
+          "state": "CA",
+          "stage": "Series D+",
+          "last_funding": "2019-01-25",
+          "total_approvals": 42,
+          "titles": [
+            "Sr. Software Engineer"
+          ]
+        }
+      ]
+    }
+  ],
+  "stop_conditions": [
+    {
+      "condition": "UNSCORABLE_FRAMING",
+      "detail": "2 framing(s) have no cognitive_pivot_score in data/bls/compact/soc_occupation_compact.csv: 15-1299 (Computer Occupations, All Other), 15-1255 (Web and Digital Interface Designers)",
+      "effect": "Role-quality comparison is WITHHELD for these framings. Sponsorship counts remain valid."
+    },
+    {
+      "condition": "STALE_FUNDING_DATA",
+      "detail": "newest latest_funding_date in data/80-days-to-stay/80-days-csv/mapped_student_employment_targets_v3.csv is 2025-09-26, 372 days before --asof 2026-10-03.",
+      "effect": "No company can satisfy a 365-day funding-recency gate from committed data. Refresh via scripts/sec/ before trusting any \"recently funded\" claim."
+    },
+    {
+      "condition": "NO_SPONSORSHIP_RECORD",
+      "detail": "framing(s) with zero matching companies in committed history: creative-technologist",
+      "effect": "Absence of record is NOT proof of non-sponsorship. Treat as unknown, not as a negative."
+    },
+    {
+      "condition": "TITLE_LIST_IS_A_SUMMARY",
+      "detail": "1517 of 1557 companies (97.4%) have more approvals than listed titles (max list length 14).",
+      "effect": "Per-framing counts are LOWER BOUNDS, and the bound is loosest for low-volume titles. A spread between a high-volume framing and a low-volume one is biased upward by an unknown factor."
+    }
+  ],
+  "not_verified": [
+    "The title→SOC mapping for each framing (the source has no SOC column; it is the candidate's judgment).",
+    "Salary or approval rate for the matched TITLE — both available fields are company-wide, across all roles.",
+    "Whether any employer would accept a reframed title for this candidate.",
+    "Current openings — this file is historical sponsorship record, not live postings.",
+    "Sponsorship by firms absent from the dataset (94.9% of rows carry no H-1B record)."
+  ]
+}

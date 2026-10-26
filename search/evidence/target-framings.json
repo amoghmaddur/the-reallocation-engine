@@ -1,0 +1,12 @@
+{
+  "_note": "PRIVATE (search/ is gitignored). Candidate title framings for Amogh's target-role decision. SOC per framing is an agent proposal awaiting Amogh's confirmation.",
+  "candidate": "amogh (private layer)",
+  "authorization": "F-1 student (MS in progress, program end 2027-12); requires sponsorship",
+  "framings": [
+    { "id": "business-analyst", "label": "Business Analyst", "soc": "13-1111", "title_probes": ["BUSINESS ANALYST", "BUSINESS SYSTEMS ANALYST"] },
+    { "id": "systems-analyst", "label": "Systems / IT Analyst", "soc": "15-1211", "title_probes": ["SYSTEMS ANALYST", "IT ANALYST", "INFORMATION SYSTEMS ANALYST", "TECHNOLOGY ANALYST"] },
+    { "id": "data-bi-analyst", "label": "Data / BI Analyst", "soc": "15-2051", "title_probes": ["DATA ANALYST", "BUSINESS INTELLIGENCE", "BI ANALYST", "ANALYTICS ANALYST", "PRODUCT ANALYST"] },
+    { "id": "product-manager", "label": "Product Manager (APM/PM)", "soc": "15-1299", "title_probes": ["PRODUCT MANAGER", "ASSOCIATE PRODUCT MANAGER", "PRODUCT OWNER"] },
+    { "id": "software-dev", "label": "Software Engineer / Developer", "soc": "15-1252", "title_probes": ["SOFTWARE ENGINEER", "SOFTWARE DEVELOPER", "APPLICATION DEVELOPER", "FULL STACK", "FULL-STACK"] }
+  ]
+}

@@ -77,3 +77,47 @@ matching résumé title; repeats now read "(already counted, +0)". (2) The `skil
 `test_justification_lines_sum_to_score` fails on the old script (lines 10.0 vs score 7.5)
 and passes on the new; 23 tests pass. Verdicts and scores are unchanged, so earlier runs'
 decisions stand; only their printed justifications under-explained them.
+
+## Student entries (fork of amoghmaddur)
+
+### 2026-10-26 — Personal data layer: search/resume.json, profile.yml, gaps.md · amoghmaddur
+
+- **Recipe:** manual (Exercise Zero, docs/tutorials/00-personal-layer.md), agent: Claude in Claude Code.
+- **Built:** `search/resume.json` (attested 2026-10-26), `search/profile.yml`, `search/gaps.md`.
+  All three are gitignored by this repo's `/search/*` rule; `search/private-notes.md` is ignored
+  by its own rule (`.gitignore:80`, confirmed with `git check-ignore -v`). Agent first drafts are
+  kept in `search/evidence/`.
+- **Three attestation errors caught in resume.json:** (1) both internship titles had been
+  promoted from "Intern" to "Product Developer" / "Software Developer"; (2) unmeasured numbers,
+  added in a résumé revision 18 minutes after an earlier draft ("25% accuracy", "100+ concurrent
+  users", "sub-second"…), were removed, keeping only the ones I can back; (3) 16 of 30 listed
+  skills had no job or project behind them and were filed as coursework (2 of them, Software
+  Testing and GitHub, moved back the same day on Pepper evidence: 75 unit tests, public repo with
+  GitHub Actions). Also fixed: Carbon
+  Footprint Calculator narrowed to my part, and Personal AI Prompter (Pepper) re-dated from
+  Jan–Apr 2025 to 2026-07–present and re-described as a browser extension with no backend, not
+  a Firebase app.
+- **Top gap:** shipping Pepper, my LLM-backed prompter, to real users (row 1, rewritten). The
+  largest gap by evidence is experience level: 12 of 14 sampled AI/ML postings are Senior or above.
+- **Row killed:** row 7, "LLM application stack". The agent built it from the résumé's one-line
+  description of Pepper ("stores prompts"); Pepper actually makes an LLM call to rewrite each
+  prompt and reshapes suggestions after onboarding (checked against the v0.3 code).
+- **profile.yml field corrected:** `target_role.search_types` co-op `when` — the agent's draft said
+  "now"; the truth is "applying now for the Jan–Jun 2027 co-op cycle".
+- **Verification check (Step 4):**
+  - *resume.json:* both jobs trace to my LinkedIn export (same dates) and my offer letters, which
+    say "Intern". The agent's extraction matched the PDF word for word; the errors were in my
+    résumé itself. Of the projects, only Pepper is verifiable by a stranger (public repo and
+    playground, HTTP 200; 75/75 unit tests re-run). The other three have no URL yet.
+  - *profile.yml:* the visa section is what I know, not what I hope. F-1, pre-OPT, 0 unemployment
+    days, program end 2027-12 (from my résumé and LinkedIn; the agent did not read my I-20), and
+    OPT dates left null because they don't exist yet. STEM eligibility is "yes" because my DSO
+    confirmed it; that confirmation is my statement and is not attached.
+  - *gaps.md:* every evidence cell cites one of 14 real postings (saved raw API responses; all 12
+    quotes checked verbatim), the O*NET row for 15-1252, or an observed count (0 co-op postings
+    among 407). Limits: 9 of the 14 postings are from one company (Whoop), and the sample is a
+    2026-10-26 snapshot.
+- **Found along the way:** `scripts/score/role-scorer.mjs` does not enforce a sponsorship gate.
+  A synthetic role with no sponsorship history and fit 1.0 scored 0.300 → Apply. Noted in
+  profile.yml; the gate has to be applied by hand until the scorer changes.
+- **Not logged:** nothing from `search/private-notes.md`; no contact details.

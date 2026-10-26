@@ -1,0 +1,15 @@
+{
+  "_persona": "FICTIONAL — search/examples/ishaan-varma/profile.yml. No real personal data.",
+  "_revision": "v2, after reading run 1's sample rows: FILM dropped from motion (it matched an engineering title); front-end split from generic software engineering (SOFTWARE ENGINEER matched QA, infra and manager titles); creative-technologist added.",
+  "candidate": "ishaan-varma (fictional persona)",
+  "authorization": "F-1 OPT year 1, STEM-eligible, needs sponsorship (opt_end 2027-07-31)",
+  "framings": [
+    { "id": "motion-media", "label": "Motion / Media Designer", "soc": "27-1014", "title_probes": ["ANIMATOR", "ANIMATION", "MOTION", "VFX", "VISUAL EFFECTS", "VIDEO EDITOR"] },
+    { "id": "creative-direction", "label": "Art / Creative Director", "soc": "27-1011", "title_probes": ["ART DIRECTOR", "CREATIVE DIRECTOR", "CREATIVE LEAD", "HEAD OF CREATIVE", "CREATIVE STRATEG"] },
+    { "id": "graphic-visual", "label": "Graphic / Visual Designer", "soc": "27-1024", "title_probes": ["GRAPHIC DESIGN", "VISUAL DESIGN", "BRAND DESIGN", "ILLUSTRAT"] },
+    { "id": "creative-technologist", "label": "Creative Technologist", "soc": "15-1299", "title_probes": ["CREATIVE TECHNOLOG", "CREATIVE ENGINEER", "CREATIVE DEVELOPER"] },
+    { "id": "product-ux", "label": "Product / Interface Designer", "soc": "15-1255", "title_probes": ["PRODUCT DESIGN", "UX", "UI/UX", "UI DESIGN", "INTERACTION DESIGN", "DESIGN SYSTEM", "WEB DESIGN"] },
+    { "id": "frontend-narrow", "label": "Front-End / UI Engineer", "soc": "15-1252", "title_probes": ["FRONT END", "FRONTEND", "FRONT-END", "UI ENGINEER", "WEB ENGINEER", "GRAPHICS ENGINEER", "WEB DEVELOPER"] },
+    { "id": "swe-generic", "label": "Software Engineer (any)", "soc": "15-1252", "title_probes": ["SOFTWARE ENGINEER"], "claimable": false, "_why_control": "Matches QA, infrastructure and manager titles this portfolio cannot honestly claim; kept only to show how much of v1's 450 it was." }
+  ]
+}

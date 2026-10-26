@@ -77,3 +77,4 @@ youtube/**/*.m4a
 youtube/**/*.png
 youtube/**/*.jsonl
 youtube/**/*.bak-*
+search/private-notes.md

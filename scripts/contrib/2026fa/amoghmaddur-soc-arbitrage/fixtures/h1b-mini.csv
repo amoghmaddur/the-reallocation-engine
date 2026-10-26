@@ -1,0 +1,6 @@
+company_name,state,latest_funding_stage,latest_funding_date,Total Approvals,Approval_Rate,median_salary_offered,top_job_titles_sponsored
+PROMO CO,CA,Series B,2025-09-01,3.0,100.0,90000.0,['Senior Promotions Marketing Manager']
+STUDIO CO,NY,Series D+,2025-06-01,40.0,95.0,180000.0,"['Software Engineer', 'Senior Designer, Motion Graphics']"
+DESIGN CO,MA,Series C,2024-01-15,2.0,100.0,120000.0,"['Product Designer', ""Designer's Assistant""]"
+ENG CO,WA,Series A,2023-03-03,9.0,90.0,150000.0,"['Frontend Engineer', 'Software Engineer II']"
+NOSPONSOR CO,TX,Seed,2025-09-26,,,,

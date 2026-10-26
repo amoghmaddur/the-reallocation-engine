@@ -1,0 +1,38 @@
+# FICTIONAL EXAMPLE PERSONA — safe to commit. No paired CV in resumes/ by design:
+# this persona exercises the SOC-framing branch, not the resume-render branch.
+# Exercises: dual-SOC creative-technical candidate whose pivot-target SOC
+# (15-1255) has NO cognitive_pivot_score — the UNSCORABLE stop condition.
+candidate:
+  name: Ishaan Varma
+  email: ishaan.varma@example.com
+  phone: "(617) 555-0172"
+  linkedin: linkedin.com/in/ishaanvarma-example
+  github: github.com/ishaanvarma-example
+  location: Boston, MA
+needs_sponsorship: true
+target_role:
+  primary: Product Designer (design systems / motion)
+  secondary: Motion Designer — AI video tooling
+  description: >
+    Builds programmatic video and explainer pipelines (scene-graph animation,
+    component-driven render systems, TTS-timed compositions). The same portfolio
+    is legible as motion design, as product/interface design, or as front-end
+    engineering depending entirely on how the posting is titled.
+  excluded: agency contract-to-hire with no sponsorship history
+visa:
+  type: F-1
+  current_status: "F-1 OPT (post-completion, year 1)"
+  ead_start_date: 2026-08-01
+  opt_end_date: 2027-07-31
+  unemployment_days_used: 12
+  unemployment_ceiling: 90
+  buffer_target: 20
+  stem_eligible: true
+  notes: >
+    STEM-eligible degree, so a 24-month extension is available and the
+    employer must be E-Verify enrolled. Three lottery attempts are possible
+    only if the first filing happens in the FY2028 cycle — which means being
+    employed by a filing-willing employer before March 2027.
+geography:
+  current_location: Boston, MA
+  open_to_remote: true

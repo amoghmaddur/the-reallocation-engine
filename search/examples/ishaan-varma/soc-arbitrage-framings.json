@@ -1,0 +1,38 @@
+{
+  "_persona": "FICTIONAL — search/examples/ishaan-varma/profile.yml. No real personal data.",
+  "candidate": "ishaan-varma (fictional persona)",
+  "authorization": "F-1 OPT year 1, STEM-eligible, needs sponsorship (opt_end 2027-07-31)",
+  "_framings_note": "One portfolio, five legible titles. Probes are matched case-insensitively as substrings against the historical sponsored-title strings, so they are written long enough to avoid false hits (e.g. 'UI/UX' not 'UI', which would match BUILD/RECRUITING/SUITE).",
+  "framings": [
+    {
+      "id": "motion-media",
+      "label": "Motion / Media Designer",
+      "soc": "27-1014",
+      "title_probes": ["ANIMATOR", "ANIMATION", "MOTION", "VFX", "VISUAL EFFECTS", "VIDEO EDITOR", "FILM"]
+    },
+    {
+      "id": "creative-direction",
+      "label": "Art / Creative Director",
+      "soc": "27-1011",
+      "title_probes": ["ART DIRECTOR", "CREATIVE DIRECTOR", "CREATIVE LEAD", "HEAD OF CREATIVE", "CREATIVE STRATEG"]
+    },
+    {
+      "id": "graphic-visual",
+      "label": "Graphic / Visual Designer",
+      "soc": "27-1024",
+      "title_probes": ["GRAPHIC DESIGN", "VISUAL DESIGN", "BRAND DESIGN", "ILLUSTRAT"]
+    },
+    {
+      "id": "product-ux",
+      "label": "Product / Interface Designer",
+      "soc": "15-1255",
+      "title_probes": ["PRODUCT DESIGN", "UX", "UI/UX", "UI DESIGN", "INTERACTION DESIGN", "DESIGN SYSTEM", "WEB DESIGN"]
+    },
+    {
+      "id": "frontend-eng",
+      "label": "Front-End / Software Engineer",
+      "soc": "15-1252",
+      "title_probes": ["FRONT END", "FRONTEND", "FRONT-END", "SOFTWARE ENGINEER", "WEB ENGINEER", "GRAPHICS ENGINEER"]
+    }
+  ]
+}

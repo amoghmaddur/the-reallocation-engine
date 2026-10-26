@@ -1,0 +1,61 @@
+# search/profile.yml — PRIVATE (search/ is gitignored). Declared 2026-10-26 from Amogh's intake answers.
+# AGENT FIRST DRAFT — awaiting Amogh's review. Lines marked (agent) are agent-derived, not Amogh's words.
+candidate:
+  name: Amogh Maddur
+  location: Boston, MA
+
+# ── Q5 SPONSORSHIP — a GATE, not a preference ────────────────────────────────
+needs_sponsorship: true
+sponsorship_gate: true          # a company with no sponsorship history is skip-regardless, whatever the fit
+# VERIFIED 2026-10-26: scripts/score/role-scorer.mjs does NOT enforce this gate. Sponsorship is a
+# weighted vote (0.35); only liveness and timeline are gates. A synthetic role with no sponsorship
+# history and fit 1.0 scored (0·0.35 + 1·0.3) × 1 × 1 = 0.300 → Apply. Until the scorer gains a
+# sponsorship gate, skip any role whose sponsorship p is 0 by hand.
+# The Ch.11 scorer reads ONLY this string to decide sponsorship. Any value containing
+# "authorized", "citizen", "permanent", "green card" or "no sponsor" switches sponsorship OFF.
+authorization: "F-1 student, pre-OPT; requires H-1B sponsorship"
+
+# ── Q1 TARGET ROLE ───────────────────────────────────────────────────────────
+target_role:
+  primary: AI Engineer
+  confirmed_soc: ["15-1252", "15-2051"]   # confirmed at the SOC gate, 2026-10-26
+  soc_titles: ["Software Developers", "Data Scientists"]
+  search_titles:                          # (agent) sponsorship history by title, engine data, 2026-10-26
+    - {title: "Machine Learning Engineer", sponsoring_employers: 50}
+    - {title: "ML / Applied / Data Scientist", sponsoring_employers: 111}
+    - {title: "AI Engineer (exact)", sponsoring_employers: 1}
+  search_types:
+    - {type: co-op, basis: "CPT during the MS program", when: "now"}
+    - {type: full-time, basis: "post-completion OPT", when: "after 2027-12"}
+
+# ── Q2 VISA AND TIMELINE ─────────────────────────────────────────────────────
+visa:
+  type: F-1
+  current_status: "F-1 student, pre-OPT"
+  program_end_date: 2027-12               # expected; from résumé + LinkedIn (I-20 not read)
+  opt_start_date: null                    # not yet applied
+  opt_end_date: null                      # not yet issued
+  unemployment_days_used: 0
+  unemployment_ceiling: 90                # 150 with the STEM extension
+  buffer_target_days: 80                  # book Ch.10 recommendation ("an 80-day buffer below the 90-day ceiling")
+  stem_eligible: true
+  stem_confirmation: "confirmed by DSO (Amogh's statement, 2026-10-26; confirmation document and date not recorded here)"
+
+# ── Q3 GEOGRAPHY ─────────────────────────────────────────────────────────────
+geography:
+  current_location: Boston, MA
+  open_to_relocation: true
+  locations: ["anywhere in the US"]
+  remote_preference: not stated
+
+# ── Q4 INDUSTRY AND COMPANY ──────────────────────────────────────────────────
+industry:
+  sectors: []                             # none stated
+  company_stage: [seed, series_a, series_b, series_c, series_d]
+  not_targeted: [public, big_tech]        # not chosen at intake; not a hard exclusion
+  hard_exclusions: []                     # none stated
+
+# (agent) data caveats for the scorer's reader
+caveats:
+  - "latest_funding_stage in the 80 Days file is unreliable: Etsy is labelled Series A, Roblox Series B, LinkedIn Series D+. Stage filters should be checked by hand."
+  - "0 intern or co-op postings among 407 postings on 8 public boards checked 2026-10-26; co-op roles likely come through a university channel, not public ATS boards."
